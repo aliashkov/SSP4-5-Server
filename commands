@@ -1,0 +1,21 @@
+- Read all emperors
+```
+{emperors {userName, emperor}}
+```
+- Read one emperor by id
+```
+{emperor(userName:"test"){emperor}}
+```
+
+- Update a emperorGrade for a emperor
+```
+mutation updateEmperor {
+  updateEmperor(userName:"test", emperor: 555){userName, emperor}
+}
+```
+
+- Add a new emperor for a new username
+```
+mutation addEmperor {
+  addEmperor(userName:"test3", emperor: 353){userName, emperor}
+}
